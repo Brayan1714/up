@@ -1,0 +1,172 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    position: relative;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.fondo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(270deg, #004080, #ff0000, #0040ff);
+    background-size: 600% 600%;
+    animation: moverFondo 15s ease infinite;
+    z-index: -1;
+}
+
+@keyframes moverFondo {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.card-glass {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 20px;
+    margin: 30px auto;
+    max-width: 900px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+}
+
+header {
+    background: rgba(0,0,0,0.3);
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid rgba(255,255,255,0.3);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    margin: 0 12px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 30px;
+    background: rgba(255,255,255,0.15);
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background: white;
+    color: #004080;
+}
+
+.perfil {
+    text-align: center;
+    padding: 40px;
+}
+
+.foto-perfil {
+    width: 220px;
+    border-radius: 50%;
+    border: 6px solid #fff;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.5);
+}
+
+.resaltar {
+    color: #ff8080;
+}
+
+.colores {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+}
+
+.color-box {
+    width: 160px;
+    height: 160px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.5);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.color-box:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.7);
+}
+
+.rojo {
+    background: #ff0000;
+}
+
+.azul {
+    background: #0040ff;
+}
+
+.deportes, .amigos {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(8px);
+    border-radius: 15px;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0 6px 14px rgba(0,0,0,0.3);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.6);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 12px;
+    margin-top: 10px;
+}
+
+.amigos img {
+    width: 250px;
+    border-radius: 15px;
+    box-shadow: 0px 6px 14px rgba(0,0,0,0.5);
+    transition: transform 0.3s;
+}
+
+.amigos img:hover {
+    transform: scale(1.08);
+}
+
+footer {
+    background: rgba(0,0,0,0.3);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+    font-size: 0.9rem;
+    border-top: 2px solid rgba(255,255,255,0.3);
+}
